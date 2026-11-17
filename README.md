@@ -1,7 +1,7 @@
 # HERITAGE & POLO — Old Money Wardrobe & Bespoke Photo Album Generator
 
 **Studiul Individual Nr. 2**  
-**Disciplina:** AMPS (Arhitectura și Modelarea Proceselor Software)  
+**Disciplina:** Asistența managementului proiectelor software
 **Autor / Student:** Cozma Petru  
 **Tematică:** Generator de albume foto vestimentare în stilul **Old Money & Ralph Lauren (Quiet Luxury, Tweed, Cașmir, Savile Row)**  
 
