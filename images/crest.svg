@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="crestGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfb76c"/>
+      <stop offset="50%" stop-color="#c5a059"/>
+      <stop offset="100%" stop-color="#9a742c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="#0d231a" stroke="url(#crestGold)" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="url(#crestGold)" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <path d="M60 22 L86 32 C86 64, 60 84, 60 88 C60 84, 34 64, 34 32 Z" 
+        fill="#143527" stroke="url(#crestGold)" stroke-width="1.8"/>
+  <text x="60" y="58" font-family="'Cinzel', serif" font-size="22" font-weight="700" 
+        fill="url(#crestGold)" text-anchor="middle">RL</text>
+  <text x="60" y="73" font-family="'Cinzel', serif" font-size="8.5" 
+        fill="#dfb76c" text-anchor="middle" letter-spacing="2">EST. 1967</text>
+  <polygon points="60,28 62,33 67,33 63,36 65,41 60,38 55,41 57,36 53,33 58,33" fill="url(#crestGold)"/>
+</svg>

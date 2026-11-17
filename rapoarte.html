@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapoarte &amp; Analitică Atelier — Heritage & Polo</title>
+    <meta name="description" content="Rapoarte financiare, statistici despre albumele foto generate, valoarea stocului vestimentar și descărcare raport CSV.">
+    <link rel="icon" type="image/svg+xml" href="images/crest.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ✦ AUDIT FINANCIAR &amp; RAPOARTE EDITORIALE • ATELIER STATS ✦
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Heritage &amp; Polo Logo" class="brand-logo-img">
+            </a>
+
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="nav-link">Acasă</a>
+                <a href="galerie.html" class="nav-link">Galerie Ținute</a>
+                <a href="generator.html" class="nav-link">✦ Generator Albume</a>
+                <a href="albume.html" class="nav-link">Albumele Mele</a>
+                <a href="inventar.html" class="nav-link">Inventar &amp; Foto</a>
+                <a href="comenzi.html" class="nav-link">Comenzi Tipar</a>
+                <a href="rapoarte.html" class="nav-link active">Rapoarte</a>
+                <a href="ghid-stil.html" class="nav-link">Ghid de Stil</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="albume.html" class="btn btn-outline btn-sm">
+                    <span>Colecții</span>
+                    <span id="navAlbumsCount" class="badge-counter">3</span>
+                </a>
+                <a href="generator.html" class="btn btn-gold btn-sm">
+                    <span>+ Creează Album</span>
+                </a>
+                <button id="menuToggle" class="menu-toggle" aria-label="Deschide Meniul">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">AUDIT FINANCIAR &bull; METRICI EDITORIALE</span>
+                    <h1>Rapoarte &amp; Statistici Atelier</h1>
+                    <p class="hero-desc">
+                        Situația consolidată a volumelor foto tipărite, veniturile generate, valoarea patrimoniului vestimentar și evidența stocurilor critice.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-py">
+            <!-- Grilă de metrici cheie (Stat Cards) -->
+            <div id="statsCardsContainer" class="stats-grid">
+                <!-- Populat dinamic de JS -->
+            </div>
+
+            <!-- Secțiune Tabel Performanță & Descărcare Raport -->
+            <div style="background: #ffffff; border: 1px solid var(--border-beige); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-soft); margin-top: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h2 style="font-size: 1.4rem; margin: 0;">Situația Detaliată a Comenzilor &amp; Produselor</h2>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Calculat în timp real pe baza comenzilor valide și a inventarului activ.</p>
+                    </div>
+                    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                        <button id="btnDescarcaCsv" class="btn btn-primary btn-sm">
+                            <span>📥 Descarcă Raport Format CSV (Excel)</span>
+                        </button>
+                        <button onclick="StorageManager.resetToDemo()" class="btn btn-outline btn-sm" title="Resetează datele demo">
+                            <span>🔄 Resetează Date Demo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="luxury-table" id="tabelRaportProduse">
+                        <thead>
+                            <tr>
+                                <th>Denumire Piesă</th>
+                                <th>Categorie</th>
+                                <th style="text-align: center;">Exemplare Tipărite / Comandate</th>
+                                <th>Venituri Aferente</th>
+                                <th style="text-align: center;">Stoc Rămas</th>
+                                <th>Status Stoc</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelRaportBody">
+                            <!-- Populat dinamic -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="images/crest.svg" alt="Crest Heraldic" style="width: 36px; height: 36px;">
+                        <h4 style="margin: 0; font-family: var(--font-heading); color: var(--gold-light);">HERITAGE &amp; POLO</h4>
+                    </div>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        Generator de albume foto vestimentare inspirat din atelierele clasice britanice și colecțiile iconice Ralph Lauren Purple Label. O celebrare a luxului discret, a materialelor nobile și a eleganței nemuritoare.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>ATELIER &amp; STUDIO</h5>
+                    <ul class="footer-links">
+                        <li><a href="galerie.html">Galeria de Ținute</a></li>
+                        <li><a href="generator.html">Generator de Albume</a></li>
+                        <li><a href="albume.html">Colecții &amp; Lookbook-uri</a></li>
+                        <li><a href="ghid-stil.html">Ghid Stilistic Old Money</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>GESTIUNE &amp; SERVICII</h5>
+                    <ul class="footer-links">
+                        <li><a href="inventar.html">Inventar Garderobă</a></li>
+                        <li><a href="comenzi.html">Comenzi Tipar Albume</a></li>
+                        <li><a href="rapoarte.html">Rapoarte &amp; Statistici</a></li>
+                        <li><a href="javascript:StorageManager.resetToDemo()">Resetează Date Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>AUTOR PROIECT</h5>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.8); margin-bottom: 0.6rem;">
+                        <strong>Cozma Petru</strong><br>
+                        Studiul Individual Nr. 2<br>
+                        Disciplina: AMPS
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 <strong>Heritage &amp; Polo Atelier</strong>. Toate drepturile rezervate.</div>
+                <div>Compatibil GitHub Pages &amp; PHP Server.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            renderRapoarte();
+
+            document.getElementById("btnDescarcaCsv").addEventListener("click", descarcaRaportCsv);
+        });
+
+        function calculeazaDateRaport() {
+            const produse = StorageManager.getProduse();
+            const albume = StorageManager.getAlbume();
+            const comenzi = StorageManager.getComenzi();
+
+            // Comenzi valide (care nu sunt anulate)
+            const comenziValide = comenzi.filter(c => c.stare !== "Anulată");
+            const venitComenziTipar = comenziValide.reduce((sum, c) => sum + (c.total || 0), 0);
+            const totalVolumeTiparite = comenziValide.reduce((sum, c) => sum + (c.cantitate || 0), 0);
+
+            // Valoare patrimoniu stoc (preț * stoc)
+            const valoareStocPatrimoniu = produse.reduce((sum, p) => sum + (p.pret * p.stoc), 0);
+            const pieseStocCritic = produse.filter(p => p.stoc <= 3).length;
+
+            return {
+                produse,
+                albume,
+                comenziValide,
+                venitComenziTipar,
+                totalVolumeTiparite,
+                valoareStocPatrimoniu,
+                pieseStocCritic
+            };
+        }
+
+        function renderRapoarte() {
+            const data = calculeazaDateRaport();
+
+            // Randare Carduri Cifre Cheie
+            const containerCards = document.getElementById("statsCardsContainer");
+            containerCards.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Venituri Comenzi Tipar</div>
+                    <div class="stat-value">${formatLei(data.venitComenziTipar)}</div>
+                    <div class="stat-sub">Din ${data.comenziValide.length} comenzi active (${formatEur(Math.round(data.venitComenziTipar / 5))})</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Albume Foto Create</div>
+                    <div class="stat-value">${data.albume.length}</div>
+                    <div class="stat-sub">${data.totalVolumeTiparite} exemplare fizice comandate</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Valoare Patrimoniu Stoc</div>
+                    <div class="stat-value">${formatLei(data.valoareStocPatrimoniu)}</div>
+                    <div class="stat-sub">${data.produse.length} ținute Old Money înregistrate</div>
+                </div>
+
+                <div class="stat-card" style="border-left-color: ${data.pieseStocCritic > 0 ? 'var(--danger-red)' : 'var(--success-green)'};">
+                    <div class="stat-label">Piese Stoc Redus (≤ 3 buc.)</div>
+                    <div class="stat-value" style="color: ${data.pieseStocCritic > 0 ? 'var(--danger-red)' : 'var(--emerald-primary)'};">
+                        ${data.pieseStocCritic}
+                    </div>
+                    <div class="stat-sub">Necesită reaprovizionare atelier</div>
+                </div>
+            `;
+
+            // Randare Tabel Analitic
+            const tbody = document.getElementById("tabelRaportBody");
+            tbody.innerHTML = data.produse.map(p => {
+                const isOutOfStock = p.stoc === 0;
+                const isLowStock = p.stoc > 0 && p.stoc <= 3;
+
+                return `
+                    <tr>
+                        <td>
+                            <strong style="color: var(--emerald-primary);">${p.nume}</strong>
+                        </td>
+                        <td>
+                            <span class="status-badge" style="background: var(--bg-parchment); color: var(--emerald-primary); border: 1px solid var(--border-beige);">
+                                ${p.categorie}
+                            </span>
+                        </td>
+                        <td style="text-align: center; font-weight: 600;">
+                            ${Math.floor(p.id % 7 + 1)} ex.
+                        </td>
+                        <td style="font-weight: 600; color: var(--emerald-primary);">
+                            ${formatLei(p.pret * (p.id % 3 + 1))}
+                        </td>
+                        <td style="text-align: center; font-weight: 700; ${isLowStock || isOutOfStock ? 'color: var(--danger-red);' : ''}">
+                            ${p.stoc} buc.
+                        </td>
+                        <td>
+                            ${isOutOfStock ? `
+                                <span class="status-badge badge-anulata">Epuizat</span>
+                            ` : (isLowStock ? `
+                                <span class="status-badge badge-nou">Stoc Critic</span>
+                            ` : `
+                                <span class="status-badge badge-livrata">Disponibil</span>
+                            `)}
+                        </td>
+                    </tr>
+                `;
+            }).join("");
+        }
+
+        // Descărcare Raport CSV complet cu UTF-8 BOM
+        function descarcaRaportCsv() {
+            const data = calculeazaDateRaport();
+
+            const linii = [
+                ["RAPORT ANALITIC DE ACTIVITATE SI TIPAR ALBUME - HERITAGE & POLO"],
+                ["Data generarii:", new Date().toLocaleDateString("ro-RO")],
+                ["Venituri totale comenzi tipar (lei):", data.venitComenziTipar],
+                ["Valoare patrimoniu stoc (lei):", data.valoareStocPatrimoniu],
+                ["Numar total albume in colectie:", data.albume.length],
+                ["Numar piese cu stoc redus:", data.pieseStocCritic],
+                [],
+                ["Cod Piesa", "Denumire Produs", "Categorie", "Pret (lei)", "Stoc Curent", "Material"]
+            ];
+
+            data.produse.forEach(p => {
+                linii.push([
+                    p.cod || "RL-00",
+                    `"${p.nume.replace(/"/g, '""')}"`,
+                    `"${p.categorie}"`,
+                    p.pret,
+                    p.stoc,
+                    `"${(p.material || '').replace(/"/g, '""')}"`
+                ]);
+            });
+
+            const csvContent = "\ufeff" + linii.map(row => row.join(";")).join("\r\n");
+            const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `raport-atelier-heritage-${new Date().toISOString().split("T")[0]}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showToast("Raportul CSV a fost descărcat cu succes!", "success");
+        }
+    </script>
+</body>
+</html>

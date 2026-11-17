@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenzi Tipar Albume Foto de Lux — Heritage & Polo</title>
+    <meta name="description" content="Comandă tipărirea fizică a albumelor foto create în studio. Legătorie artizanală în piele naturală, pânză de in sau cutie de catifea de lux.">
+    <link rel="icon" type="image/svg+xml" href="images/crest.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ✦ ATELIER DE LEGĂTORIE DE ARTĂ • TIPAR FOTO PE HÂRTIE MATĂ 250G/MP ✦
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Heritage &amp; Polo Logo" class="brand-logo-img">
+            </a>
+
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="nav-link">Acasă</a>
+                <a href="galerie.html" class="nav-link">Galerie Ținute</a>
+                <a href="generator.html" class="nav-link">✦ Generator Albume</a>
+                <a href="albume.html" class="nav-link">Albumele Mele</a>
+                <a href="inventar.html" class="nav-link">Inventar &amp; Foto</a>
+                <a href="comenzi.html" class="nav-link active">Comenzi Tipar</a>
+                <a href="rapoarte.html" class="nav-link">Rapoarte</a>
+                <a href="ghid-stil.html" class="nav-link">Ghid de Stil</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="albume.html" class="btn btn-outline btn-sm">
+                    <span>Colecții</span>
+                    <span id="navAlbumsCount" class="badge-counter">3</span>
+                </a>
+                <a href="generator.html" class="btn btn-gold btn-sm">
+                    <span>+ Creează Album</span>
+                </a>
+                <button id="menuToggle" class="menu-toggle" aria-label="Deschide Meniul">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">LEGĂTORIE DE ARTĂ &bull; TIPAR ARTIZANAL</span>
+                    <h1>Comandă Tipărirea Fizică a Albumului</h1>
+                    <p class="hero-desc">
+                        Transformă lookbook-ul tău digital într-un volum tangibil de colecție, legat manual în pânză englezească de in sau piele naturală finisată cu foiță de aur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-py">
+            <!-- Formular Comandă Nouă -->
+            <div style="background: #ffffff; border: 1px solid var(--border-beige); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-soft); margin-bottom: 3rem;">
+                <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-beige); padding-bottom: 1rem;">
+                    <img src="images/crest.svg" style="width: 32px; height: 32px;">
+                    <div>
+                        <h2 style="font-size: 1.4rem; margin: 0;">Plasează o Comandă de Volum Fizic</h2>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Alege albumul din arhivă, tipul de finisaj și datele de livrare.</p>
+                    </div>
+                </div>
+
+                <form id="formComandaTipar">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin-bottom: 1.5rem;">
+                        <div class="form-group">
+                            <label for="comClient">Nume Client &amp; Titulatură *</label>
+                            <input type="text" id="comClient" name="client" required placeholder="ex: Lord Alistair Sterling sau Cozma Petru">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comEmail">Adresă Email Corespondență *</label>
+                            <input type="email" id="comEmail" name="email" required placeholder="ex: client@estate.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comAlbum">Album de Tipărit *</label>
+                            <select id="comAlbum" name="albumId" required>
+                                <!-- Populat dinamic din albumele existente -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comFinisaj">Finisaj Legătorie de Lux *</label>
+                            <select id="comFinisaj" name="finisaj" required>
+                                <option value="Hardcover Linen Regal cu Foiță Aurie" data-pret="189">
+                                    Hardcover Linen Regal cu Foiță Aurie (189 lei)
+                                </option>
+                                <option value="Legătură din Piele Naturală Maro Cognac" data-pret="299" selected>
+                                    Legătură din Piele Naturală Maro Cognac (299 lei)
+                                </option>
+                                <option value="Ediție Regală în Cutie de Catifea Smarald" data-pret="399">
+                                    Ediție Regală în Cutie de Catifea Smarald (399 lei)
+                                </option>
+                                <option value="Lookbook Editorial Softcover" data-pret="119">
+                                    Lookbook Editorial Softcover (119 lei)
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comCantitate">Număr Exemplare (buc.) *</label>
+                            <input type="number" id="comCantitate" name="cantitate" min="1" max="50" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comAdresa">Adresă Expediție Conac / Rezidență *</label>
+                            <input type="text" id="comAdresa" name="adresa" required placeholder="ex: Bulevardul Ștefan cel Mare 105, Chișinău">
+                        </div>
+                    </div>
+
+                    <!-- Sumar Cost Comandă -->
+                    <div style="background: var(--bg-parchment); border: 1px solid var(--border-beige); border-radius: var(--radius-sm); padding: 1.2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div>
+                            <div style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-dim); font-weight: 700;">TOTAL ESTIMAT TIPAR &amp; EXPEDIȚIE</div>
+                            <div id="comandaTotalAfisat" style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--emerald-primary);">
+                                299 lei
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-lg">
+                            <span>✦ Înregistrează Comanda</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tabel Istoric Comenzi -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h2 style="font-size: 1.5rem; margin: 0;">Istoric Comenzi Tipar Albume</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Poți schimba statusul fiecărei comenzi din meniul derulant (Nouă, În Tipar, Livrată, Anulată).</p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="luxury-table" id="tabelComenzi">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Client &amp; Contact</th>
+                            <th>Album Solicitat</th>
+                            <th>Finisaj Legătorie</th>
+                            <th style="text-align: center;">Ex.</th>
+                            <th>Total</th>
+                            <th style="width: 150px;">Stare Comandă</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelComenziBody">
+                        <!-- Populat dinamic -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="images/crest.svg" alt="Crest Heraldic" style="width: 36px; height: 36px;">
+                        <h4 style="margin: 0; font-family: var(--font-heading); color: var(--gold-light);">HERITAGE &amp; POLO</h4>
+                    </div>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        Generator de albume foto vestimentare inspirat din atelierele clasice britanice și colecțiile iconice Ralph Lauren Purple Label. O celebrare a luxului discret, a materialelor nobile și a eleganței nemuritoare.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>ATELIER &amp; STUDIO</h5>
+                    <ul class="footer-links">
+                        <li><a href="galerie.html">Galeria de Ținute</a></li>
+                        <li><a href="generator.html">Generator de Albume</a></li>
+                        <li><a href="albume.html">Colecții &amp; Lookbook-uri</a></li>
+                        <li><a href="ghid-stil.html">Ghid Stilistic Old Money</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>GESTIUNE &amp; SERVICII</h5>
+                    <ul class="footer-links">
+                        <li><a href="inventar.html">Inventar Garderobă</a></li>
+                        <li><a href="comenzi.html">Comenzi Tipar Albume</a></li>
+                        <li><a href="rapoarte.html">Rapoarte &amp; Statistici</a></li>
+                        <li><a href="javascript:StorageManager.resetToDemo()">Resetează Date Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>AUTOR PROIECT</h5>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.8); margin-bottom: 0.6rem;">
+                        <strong>Cozma Petru</strong><br>
+                        Studiul Individual Nr. 2<br>
+                        Disciplina: AMPS
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 <strong>Heritage &amp; Polo Atelier</strong>. Toate drepturile rezervate.</div>
+                <div>Compatibil GitHub Pages &amp; PHP Server.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const STARI_COMANDA = ["Nouă", "În Tipar", "Expediată", "Livrată", "Anulată"];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            initSelectAlbume();
+            renderTabelComenzi();
+            calculeazaTotalComanda();
+
+            // Recalculare total la schimbare finisaj sau cantitate
+            document.getElementById("comFinisaj").addEventListener("change", calculeazaTotalComanda);
+            document.getElementById("comCantitate").addEventListener("input", calculeazaTotalComanda);
+
+            // Plasare comandă nouă
+            document.getElementById("formComandaTipar").addEventListener("submit", (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const albume = StorageManager.getAlbume();
+                const albumSelectat = albume.find(a => a.id == form.albumId.value);
+                const selectFinisaj = form.finisaj;
+                const optSelectata = selectFinisaj.options[selectFinisaj.selectedIndex];
+                const pretUnitar = Number(optSelectata.dataset.pret) || 189;
+                const cantitate = Math.max(1, parseInt(form.cantitate.value, 10) || 1);
+
+                const comandaNoua = {
+                    id: Date.now(),
+                    client: form.client.value.trim(),
+                    email: form.email.value.trim(),
+                    albumId: form.albumId.value,
+                    albumTitlu: albumSelectat ? albumSelectat.titlu : "Album Colecție",
+                    finisaj: form.finisaj.value,
+                    pretUnitar: pretUnitar,
+                    cantitate: cantitate,
+                    total: pretUnitar * cantitate,
+                    stare: "Nouă",
+                    data: new Date().toISOString().split("T")[0],
+                    adresa: form.adresa.value.trim()
+                };
+
+                StorageManager.addComanda(comandaNoua);
+                form.reset();
+                form.cantitate.value = 1;
+                calculeazaTotalComanda();
+                renderTabelComenzi();
+                showToast(`Comanda pentru "${comandaNoua.albumTitlu}" a fost înregistrată!`, "success");
+            });
+        });
+
+        function initSelectAlbume() {
+            const select = document.getElementById("comAlbum");
+            const albume = StorageManager.getAlbume();
+
+            // Verifică query param albumId
+            const urlParams = new URLSearchParams(window.location.search);
+            const preselectedId = urlParams.get("albumId");
+
+            select.innerHTML = albume.map(a => `
+                <option value="${a.id}" ${a.id == preselectedId ? 'selected' : ''}>
+                    ${a.titlu} (${a.elemente ? a.elemente.length : 0} pagini &bull; ${a.curator || 'Heritage'})
+                </option>
+            `).join("");
+
+            if (albume.length === 0) {
+                select.innerHTML = `<option value="">Niciun album creat încă - mergi la Generator</option>`;
+            }
+        }
+
+        function calculeazaTotalComanda() {
+            const selectFinisaj = document.getElementById("comFinisaj");
+            const opt = selectFinisaj.options[selectFinisaj.selectedIndex];
+            const pretUnitar = opt ? Number(opt.dataset.pret) : 299;
+            const cantitate = Math.max(1, parseInt(document.getElementById("comCantitate").value, 10) || 1);
+            const total = pretUnitar * cantitate;
+            document.getElementById("comandaTotalAfisat").textContent = formatLei(total);
+        }
+
+        function renderTabelComenzi() {
+            const comenzi = StorageManager.getComenzi();
+            const tbody = document.getElementById("tabelComenziBody");
+
+            if (comenzi.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7" style="text-align: center; padding: 3rem; color: var(--text-muted);">
+                            Nicio comandă înregistrată încă.
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = comenzi.map(c => `
+                <tr>
+                    <td style="white-space: nowrap; font-size: 0.85rem; color: var(--text-muted);">
+                        ${c.data || '2026-11-17'}
+                    </td>
+                    <td>
+                        <strong style="color: var(--emerald-primary); display: block;">${c.client}</strong>
+                        <small style="color: var(--text-muted);">${c.email || ''}</small>
+                    </td>
+                    <td>
+                        <span style="font-weight: 600; color: var(--emerald-primary);">${c.albumTitlu || 'Album Foto'}</span>
+                    </td>
+                    <td style="font-size: 0.85rem; color: var(--text-secondary);">
+                        ${c.finisaj}
+                    </td>
+                    <td style="text-align: center; font-weight: 700;">
+                        ${c.cantitate}
+                    </td>
+                    <td style="font-weight: 700; color: var(--emerald-primary); white-space: nowrap;">
+                        ${formatLei(c.total)}
+                    </td>
+                    <td>
+                        <select data-id="${c.id}" class="comanda-stare-select" style="padding: 0.25rem 0.5rem; font-size: 0.82rem; border-radius: var(--radius-sm); font-weight: 600;">
+                            ${STARI_COMANDA.map(s => `
+                                <option value="${s}" ${s === c.stare ? 'selected' : ''}>${s}</option>
+                            `).join("")}
+                        </select>
+                    </td>
+                </tr>
+            `).join("");
+
+            tbody.querySelectorAll(".comanda-stare-select").forEach(select => {
+                select.addEventListener("change", () => {
+                    const id = select.dataset.id;
+                    const nouaStare = select.value;
+                    StorageManager.updateStareComanda(id, nouaStare);
+                    showToast(`Starea comenzii a fost actualizată în "${nouaStare}".`, "info");
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Sistem de operare & Editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Fișiere temporare PHP
+*.tmp
+*.bak

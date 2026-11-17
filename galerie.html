@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Ținute Old Money — Heritage & Polo</title>
+    <meta name="description" content="Explorează colecția vestimentară clasică stil Old Money & Ralph Lauren. Tweed scoțian, cașmir mongolian, paltoane de lână și accesorii nobile.">
+    <link rel="icon" type="image/svg+xml" href="images/crest.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ✦ COLECȚIA ATEMPORALĂ • VESTIMENTAȚIE CLASICĂ &amp; FOTOGRAFIE EDITORIALĂ ✦
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Heritage &amp; Polo Logo" class="brand-logo-img">
+            </a>
+
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="nav-link">Acasă</a>
+                <a href="galerie.html" class="nav-link active">Galerie Ținute</a>
+                <a href="generator.html" class="nav-link">✦ Generator Albume</a>
+                <a href="albume.html" class="nav-link">Albumele Mele</a>
+                <a href="inventar.html" class="nav-link">Inventar &amp; Foto</a>
+                <a href="comenzi.html" class="nav-link">Comenzi Tipar</a>
+                <a href="rapoarte.html" class="nav-link">Rapoarte</a>
+                <a href="ghid-stil.html" class="nav-link">Ghid de Stil</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="albume.html" class="btn btn-outline btn-sm">
+                    <span>Colecții</span>
+                    <span id="navAlbumsCount" class="badge-counter">3</span>
+                </a>
+                <a href="generator.html" class="btn btn-gold btn-sm">
+                    <span>+ Creează Album</span>
+                </a>
+                <button id="menuToggle" class="menu-toggle" aria-label="Deschide Meniul">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">GARDEROBA DE REFERINȚĂ &bull; RALPH LAUREN STYLE</span>
+                    <h1>Galeria Vestimentară Old Money</h1>
+                    <p class="hero-desc">
+                        Fiecare piesă este aleasă pentru calitatea fără compromis a fibrelor naturale, tăietura impecabilă și prestanța atemporală. Selectează ținutele dorite pentru a le include în propriul album foto.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <!-- Bară de Filtrare & Căutare -->
+            <div class="filter-bar">
+                <div id="chipsContainer" class="chips-container">
+                    <!-- Se populează dinamic cu JS -->
+                </div>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Caută sacou, cașmir, mătase, tweed...">
+                </div>
+            </div>
+
+            <!-- Contor rezultate și sortare -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.8rem;">
+                <div id="galleryCount" style="font-size: 0.9rem; color: var(--text-muted); font-weight: 500;">
+                    Se afișează 12 piese vestimentare
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.6rem;">
+                    <label for="sortSelect" style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Sortează:</label>
+                    <select id="sortSelect" style="width: auto; padding: 0.35rem 0.8rem; font-size: 0.85rem;">
+                        <option value="default">Recomandate (Colecție)</option>
+                        <option value="price-asc">Preț: Mic la Mare</option>
+                        <option value="price-desc">Preț: Mare la Mic</option>
+                        <option value="name">Alfabetic (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de ținute -->
+            <div id="fashionGrid" class="fashion-grid">
+                <!-- Populare dinamică din JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="images/crest.svg" alt="Crest Heraldic" style="width: 36px; height: 36px;">
+                        <h4 style="margin: 0; font-family: var(--font-heading); color: var(--gold-light);">HERITAGE &amp; POLO</h4>
+                    </div>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        Generator de albume foto vestimentare inspirat din atelierele clasice britanice și colecțiile iconice Ralph Lauren Purple Label. O celebrare a luxului discret, a materialelor nobile și a eleganței nemuritoare.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>ATELIER &amp; STUDIO</h5>
+                    <ul class="footer-links">
+                        <li><a href="galerie.html">Galeria de Ținute</a></li>
+                        <li><a href="generator.html">Generator de Albume</a></li>
+                        <li><a href="albume.html">Colecții &amp; Lookbook-uri</a></li>
+                        <li><a href="ghid-stil.html">Ghid Stilistic Old Money</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>GESTIUNE &amp; SERVICII</h5>
+                    <ul class="footer-links">
+                        <li><a href="inventar.html">Inventar Garderobă</a></li>
+                        <li><a href="comenzi.html">Comenzi Tipar Albume</a></li>
+                        <li><a href="rapoarte.html">Rapoarte &amp; Statistici</a></li>
+                        <li><a href="javascript:StorageManager.resetToDemo()">Resetează Date Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>AUTOR PROIECT</h5>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.8); margin-bottom: 0.6rem;">
+                        <strong>Cozma Petru</strong><br>
+                        Studiul Individual Nr. 2<br>
+                        Disciplina: AMPS
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 <strong>Heritage &amp; Polo Atelier</strong>. Toate drepturile rezervate.</div>
+                <div>Compatibil GitHub Pages &amp; PHP Server.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let categorieCurenta = "Toate";
+        let textCautare = "";
+        let sortareCurenta = "default";
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderChips();
+            renderGallery();
+
+            document.getElementById("searchInput").addEventListener("input", (e) => {
+                textCautare = e.target.value.toLowerCase().trim();
+                renderGallery();
+            });
+
+            document.getElementById("sortSelect").addEventListener("change", (e) => {
+                sortareCurenta = e.target.value;
+                renderGallery();
+            });
+        });
+
+        function renderChips() {
+            const produse = StorageManager.getProduse();
+            const categorii = ["Toate", ...new Set(produse.map(p => p.categorie))];
+            const container = document.getElementById("chipsContainer");
+
+            container.innerHTML = categorii.map(c => `
+                <button class="chip-btn ${c === categorieCurenta ? 'active' : ''}" data-cat="${c}">
+                    ${c}
+                </button>
+            `).join("");
+
+            container.querySelectorAll(".chip-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    categorieCurenta = btn.dataset.cat;
+                    container.querySelectorAll(".chip-btn").forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+                    renderGallery();
+                });
+            });
+        }
+
+        function renderGallery() {
+            let produse = StorageManager.getProduse();
+
+            // Filtrare categorie
+            if (categorieCurenta !== "Toate") {
+                produse = produse.filter(p => p.categorie === categorieCurenta);
+            }
+
+            // Căutare text
+            if (textCautare) {
+                produse = produse.filter(p => 
+                    p.nume.toLowerCase().includes(textCautare) ||
+                    (p.material && p.material.toLowerCase().includes(textCautare)) ||
+                    (p.descriere && p.descriere.toLowerCase().includes(textCautare)) ||
+                    (p.stil && p.stil.toLowerCase().includes(textCautare))
+                );
+            }
+
+            // Sortare
+            if (sortareCurenta === "price-asc") {
+                produse.sort((a, b) => a.pret - b.pret);
+            } else if (sortareCurenta === "price-desc") {
+                produse.sort((a, b) => b.pret - a.pret);
+            } else if (sortareCurenta === "name") {
+                produse.sort((a, b) => a.nume.localeCompare(b.nume));
+            }
+
+            const grid = document.getElementById("fashionGrid");
+            const countLabel = document.getElementById("galleryCount");
+
+            countLabel.textContent = `Se afișează ${produse.length} piese vestimentare`;
+
+            if (produse.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem;">
+                        <p style="font-size: 1.15rem; color: var(--text-muted); margin-bottom: 1rem;">
+                            Nicio ținută nu corespunde criteriilor de căutare selectate.
+                        </p>
+                        <button class="btn btn-outline" onclick="resetFiltre()">Resetează Filtrele</button>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = produse.map((p, index) => {
+                const isOutOfStock = p.stoc === 0;
+                const isLowStock = p.stoc > 0 && p.stoc <= 3;
+                return `
+                    <div class="fashion-card">
+                        <div class="card-media" onclick="openLightboxFromGallery(${index})">
+                            <img src="${p.img || 'images/placeholder-fashion.svg'}" alt="${p.nume}" loading="lazy">
+                            <span class="card-badge">${p.stil ? p.stil.split(' ')[0] : 'HERITAGE'}</span>
+                            <span class="card-stock ${isOutOfStock ? 'low' : (isLowStock ? 'low' : '')}">
+                                ${isOutOfStock ? 'Epuizat' : (isLowStock ? 'Doar ' + p.stoc + ' în stoc' : p.stoc + ' în stoc')}
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-category">${p.categorie}</div>
+                            <h3 class="card-title" onclick="openLightboxFromGallery(${index})" style="cursor: pointer;">
+                                ${p.nume}
+                            </h3>
+                            <div class="card-material">${p.material || 'Lână & Cașmir de lux'}</div>
+                            <div class="card-price-row">
+                                <div class="price-main">${formatLei(p.pret)}</div>
+                                <div class="price-eur">${formatEur(p.pretEur || Math.round(p.pret / 5))}</div>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-primary btn-sm" onclick="adaugainAlbumRapid(${p.id})" style="flex: 1;">
+                                    <span>+ În Album</span>
+                                </button>
+                                <button class="btn btn-outline btn-sm" onclick="openLightboxFromGallery(${index})" title="Mărește fotografia">
+                                    👁 Detalii
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+
+            // Salvăm lista curentă pentru lightbox
+            window.renderedGalleryList = produse;
+        }
+
+        window.openLightboxFromGallery = function(index) {
+            if (window.renderedGalleryList) {
+                openLightbox(window.renderedGalleryList, index);
+            }
+        };
+
+        window.resetFiltre = function() {
+            categorieCurenta = "Toate";
+            textCautare = "";
+            document.getElementById("searchInput").value = "";
+            renderChips();
+            renderGallery();
+        };
+    </script>
+</body>
+</html>

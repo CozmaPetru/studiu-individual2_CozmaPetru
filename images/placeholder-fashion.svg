@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162e24"/>
+      <stop offset="100%" stop-color="#0c1b14"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dfb76c"/>
+      <stop offset="100%" stop-color="#9a742c"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <rect x="25" y="25" width="550" height="750" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.6"/>
+  <rect x="35" y="35" width="530" height="730" fill="none" stroke="url(#gold)" stroke-width="0.6" stroke-dasharray="4,4" opacity="0.4"/>
+  
+  <!-- Silhouette icon -->
+  <g transform="translate(300, 360)" text-anchor="middle">
+    <!-- Hanger icon -->
+    <path d="M-60,0 Q0,-45 0,-70 Q0,-85 15,-85 Q30,-85 30,-70 M-60,0 L60,0 L40,25 L-40,25 Z" 
+          fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+    <text y="90" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="600" fill="url(#gold)" letter-spacing="4">HERITAGE POLO</text>
+    <text y="125" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" fill="#dfb76c" opacity="0.8" letter-spacing="2">OLD MONEY COUTURE</text>
+  </g>
+</svg>

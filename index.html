@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage & Polo — Old Money Atelier & Photo Album Generator</title>
+    <meta name="description" content="Generator de albume foto vestimentare în stilul Old Money & Ralph Lauren. Creează lookbook-uri rafinate, explorează colecții de tweed, cașmir și comandă albume fizice tipărite.">
+    <meta name="author" content="Cozma Petru">
+    <link rel="icon" type="image/svg+xml" href="images/crest.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+    <!-- Bară superioară de anunț nobiliar -->
+    <div class="top-announcement">
+        ✦ EDIȚIE LIMITATĂ • OLD MONEY COUTURE &amp; BESPOKE PHOTO ALBUM STUDIO • EST. 1967 ✦
+    </div>
+
+    <!-- Header & Navigație Principală -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Heritage &amp; Polo Logo" class="brand-logo-img">
+            </a>
+
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="nav-link active">Acasă</a>
+                <a href="galerie.html" class="nav-link">Galerie Ținute</a>
+                <a href="generator.html" class="nav-link">✦ Generator Albume</a>
+                <a href="albume.html" class="nav-link">Albumele Mele</a>
+                <a href="inventar.html" class="nav-link">Inventar &amp; Foto</a>
+                <a href="comenzi.html" class="nav-link">Comenzi Tipar</a>
+                <a href="rapoarte.html" class="nav-link">Rapoarte</a>
+                <a href="ghid-stil.html" class="nav-link">Ghid de Stil</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="albume.html" class="btn btn-outline btn-sm" title="Albumele Mele Salvate">
+                    <span>Colecții</span>
+                    <span id="navAlbumsCount" class="badge-counter">3</span>
+                </a>
+                <a href="generator.html" class="btn btn-gold btn-sm">
+                    <span>+ Creează Album</span>
+                </a>
+                <button id="menuToggle" class="menu-toggle" aria-label="Deschide Meniul">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Impunător -->
+        <section class="page-hero" style="padding: 5rem 0 4.5rem;">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">ESTETICA ARISTOCRATĂ &bull; QUIET LUXURY</span>
+                    <h1>Arta Eleganței Nemuritoare:<br>Generator de Albume Foto Old Money</h1>
+                    <p class="hero-desc">
+                        Inspirat din universul iconic Ralph Lauren Purple Label, cluburile de polo britanice și conacele din Cotswolds. Creează albume foto editoriale de excepție din piese vestimentare nemuritoare din tweed, cașmir și in.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem;">
+                        <a href="generator.html" class="btn btn-gold btn-lg">
+                            <span>✦ Deschide Generatorul de Albume</span>
+                        </a>
+                        <a href="galerie.html" class="btn btn-outline-gold btn-lg">
+                            <span>Explorează Galeria de Ținute</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bară de Valori & Cifre de Referință -->
+        <section style="background: var(--bg-parchment); border-bottom: 1px solid var(--border-beige); padding: 1.5rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--emerald-primary);">100%</div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Personalizabil (Copertă &amp; Layout)</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--emerald-primary);">4 Stiluri</div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Lookbook, Masonry, Polaroid &amp; Grid</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--emerald-primary);">Export Multi-Format</div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Tipar PDF, JSON &amp; Livrare Fizică</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--emerald-primary);">Ralph Lauren</div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Estetică Clasică Old Money</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secțiune: Albume de Semnătură Predefinite -->
+        <section class="section-py">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <span class="card-category">COLECȚII CURATORIATE</span>
+                        <h2>Albume Foto de Semnătură</h2>
+                        <p>Descoperă lookbook-urile noastre tematice inspirate din sezoanele aristocratice.</p>
+                    </div>
+                    <a href="albume.html" class="btn btn-outline">Vezi Toate Albumele &#8594;</a>
+                </div>
+
+                <div class="fashion-grid" id="homeFeaturedAlbums">
+                    <!-- Generat dinamic sau static -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Secțiune: Mini-Generator Rapid în 3 Pași -->
+        <section class="section-py" style="background: var(--bg-parchment); border-top: 1px solid var(--border-beige); border-bottom: 1px solid var(--border-beige);">
+            <div class="container">
+                <div style="max-width: 850px; margin: 0 auto; text-align: center; margin-bottom: 2.5rem;">
+                    <img src="images/crest.svg" alt="Crest" style="width: 50px; margin-bottom: 1rem;">
+                    <span class="card-category">CREAȚIE BESPOKE INSTANTANEE</span>
+                    <h2>Generează un Album Foto în Câteva Minute</h2>
+                    <p>Selectează tema cromatică, adaugă piesele vestimentare preferate sau încarcă fotografii proprii pentru un lookbook demn de o casă editorială de prestigiu.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+                    <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-beige); text-align: center; box-shadow: var(--shadow-soft);">
+                        <div class="step-num" style="margin: 0 auto 1rem; width: 32px; height: 32px; font-size: 1rem;">1</div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Alege Titlul &amp; Coperta</h3>
+                        <p style="font-size: 0.9rem;">Personalizează titlul de copertă, fontul editorial (Cinzel sau Playfair) și nuanța heraldică (Racing Green, Navy, Burgundy sau Camel).</p>
+                    </div>
+
+                    <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-beige); text-align: center; box-shadow: var(--shadow-soft);">
+                        <div class="step-num" style="margin: 0 auto 1rem; width: 32px; height: 32px; font-size: 1rem;">2</div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Selectează Ținutele</h3>
+                        <p style="font-size: 0.9rem;">Alege din catalogul nostru piese din tweed, cașmir sau in, ori încarcă propriile fotografii vestimentare comprimate automat.</p>
+                    </div>
+
+                    <div style="background: #ffffff; padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-beige); text-align: center; box-shadow: var(--shadow-soft);">
+                        <div class="step-num" style="margin: 0 auto 1rem; width: 32px; height: 32px; font-size: 1rem;">3</div>
+                        <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Exportă &amp; Răsfoiește</h3>
+                        <p style="font-size: 0.9rem;">Răsfoiește albumul în mod interactiv, exportă-l în format PDF de tipar, descarcă fișierul de configurare sau comandă volumul legat în piele.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="generator.html" class="btn btn-gold btn-lg">
+                        <span>Lansează Generatorul de Albume Foto &#8594;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citate & Manifest Estetic Old Money -->
+        <section class="section-py">
+            <div class="container" style="max-width: 900px; text-align: center;">
+                <span class="card-category">FILOSOFIA ATELIERULUI</span>
+                <blockquote style="font-family: var(--font-editorial); font-style: italic; font-size: 1.5rem; color: var(--emerald-primary); line-height: 1.6; margin: 1.5rem 0;">
+                    „Nu creez simple haine, creez vise și o moștenire culturală. Stilul este ceva foarte individual, foarte personal, iar în viața modernă, eleganța autentică vine din atemporalitate și respect pentru calitate.”
+                </blockquote>
+                <div style="font-family: var(--font-heading); font-size: 1rem; letter-spacing: 0.1em; color: var(--gold-dim); font-weight: 700;">
+                    RALPH LAUREN &bull; INSPIRAȚIE VESTIMENTARĂ
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer de Lux Old Money -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="images/crest.svg" alt="Crest Heraldic" style="width: 36px; height: 36px;">
+                        <h4 style="margin: 0; font-family: var(--font-heading); color: var(--gold-light);">HERITAGE &amp; POLO</h4>
+                    </div>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        Generator de albume foto vestimentare inspirat din atelierele clasice britanice și colecțiile iconice Ralph Lauren Purple Label. O celebrare a luxului discret, a materialelor nobile și a eleganței nemuritoare.
+                    </p>
+                    <div style="font-size: 0.8rem; color: var(--gold-dim);">
+                        "Elegance is not about being noticed, it's about being remembered."
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>ATELIER &amp; STUDIO</h5>
+                    <ul class="footer-links">
+                        <li><a href="galerie.html">Galeria de Ținute</a></li>
+                        <li><a href="generator.html">Generator de Albume</a></li>
+                        <li><a href="albume.html">Colecții &amp; Lookbook-uri</a></li>
+                        <li><a href="ghid-stil.html">Ghid Stilistic Old Money</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>GESTIUNE &amp; SERVICII</h5>
+                    <ul class="footer-links">
+                        <li><a href="inventar.html">Inventar Garderobă</a></li>
+                        <li><a href="comenzi.html">Comenzi Tipar Albume</a></li>
+                        <li><a href="rapoarte.html">Rapoarte &amp; Statistici</a></li>
+                        <li><a href="javascript:StorageManager.resetToDemo()">Resetează Date Demo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>AUTOR PROIECT</h5>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.8); margin-bottom: 0.6rem;">
+                        <strong>Cozma Petru</strong><br>
+                        Studiul Individual Nr. 2<br>
+                        Disciplina: AMPS
+                    </p>
+                    <div style="font-size: 0.8rem; color: var(--gold-light);">
+                        Compatibil GitHub Pages &amp; PHP Server
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Heritage &amp; Polo Atelier</strong>. Toate drepturile rezervate.
+                </div>
+                <div>
+                    Dezvoltat cu pasiune pentru estetica vestimentară clasică Ralph Lauren.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripturi -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const albume = StorageManager.getAlbume();
+            const produse = StorageManager.getProduse();
+            const container = document.getElementById("homeFeaturedAlbums");
+            if (container) {
+                container.innerHTML = albume.slice(0, 3).map(a => {
+                    let coverImg = a.copertaImg;
+                    if (!coverImg && a.elemente && a.elemente.length) {
+                        const p = produse.find(item => item.id == a.elemente[0]);
+                        if (p) coverImg = p.img;
+                    }
+                    if (!coverImg) coverImg = "images/placeholder-fashion.svg";
+
+                    return `
+                        <div class="fashion-card">
+                            <div class="card-media" onclick="window.location.href='albume.html'">
+                                <img src="${coverImg}" alt="${a.titlu}" loading="lazy">
+                                <span class="card-badge">${a.elemente ? a.elemente.length : 0} Fotografii</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category">CURATOR: ${a.curator || 'HERITAGE'}</div>
+                                <h3 class="card-title">${a.titlu}</h3>
+                                <p class="card-material">${a.subtitlu || 'Ediție de colecție'}</p>
+                                <div class="card-actions" style="margin-top: auto;">
+                                    <a href="albume.html" class="btn btn-primary btn-sm" style="flex: 1;">
+                                        <span>👁 Răsfoiește Albumul</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join("");
+            }
+        });
+    </script>
+</body>
+</html>

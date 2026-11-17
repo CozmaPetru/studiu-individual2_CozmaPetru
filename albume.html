@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albumele Mele & Colecții — Heritage & Polo</title>
+    <meta name="description" content="Vizualizează, răsfoiește și gestionează albumele foto Old Money create și salvate. Lookbook-uri interactive, modul slideshow și comenzi de tipar.">
+    <link rel="icon" type="image/svg+xml" href="images/crest.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ✦ BIBLIOTECA EDITORIALĂ • ALBUME FOTO &amp; LOOKBOOK-URI SALVATE ✦
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Heritage &amp; Polo Logo" class="brand-logo-img">
+            </a>
+
+            <nav id="mainNav" class="main-nav">
+                <a href="index.html" class="nav-link">Acasă</a>
+                <a href="galerie.html" class="nav-link">Galerie Ținute</a>
+                <a href="generator.html" class="nav-link">✦ Generator Albume</a>
+                <a href="albume.html" class="nav-link active">Albumele Mele</a>
+                <a href="inventar.html" class="nav-link">Inventar &amp; Foto</a>
+                <a href="comenzi.html" class="nav-link">Comenzi Tipar</a>
+                <a href="rapoarte.html" class="nav-link">Rapoarte</a>
+                <a href="ghid-stil.html" class="nav-link">Ghid de Stil</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="generator.html" class="btn btn-gold btn-sm">
+                    <span>+ Creează Album</span>
+                </a>
+                <button id="menuToggle" class="menu-toggle" aria-label="Deschide Meniul">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">ARHIVA EDITORIALĂ PRIVATĂ</span>
+                    <h1>Colecțiile &amp; Albumele Tale Foto</h1>
+                    <p class="hero-desc">
+                        Aici găsești toate lookbook-urile create în studio, alături de edițiile noastre curatoriate de semnătură. Răsfoiește paginile interactive, pornește un slideshow sau comandă tipărirea fizică legată în piele.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-py">
+            <!-- Bara superioară de acțiuni pentru colecții -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h2 style="font-size: 1.6rem; margin: 0;">Albume Salvate în Bibliotecă</h2>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Sincronizate automat în memoria browserului tău.</p>
+                </div>
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+                    <label class="btn btn-outline btn-sm" style="cursor: pointer;">
+                        <span>📥 Importă Album JSON</span>
+                        <input type="file" id="importJsonInput" accept=".json" style="display: none;">
+                    </label>
+                    <a href="generator.html" class="btn btn-gold btn-sm">
+                        <span>+ Album Nou în Studio</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Grilă de albume salvate -->
+            <div id="albumsGridContainer" class="fashion-grid">
+                <!-- Populat dinamic de js/lookbook.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                        <img src="images/crest.svg" alt="Crest Heraldic" style="width: 36px; height: 36px;">
+                        <h4 style="margin: 0; font-family: var(--font-heading); color: var(--gold-light);">HERITAGE &amp; POLO</h4>
+                    </div>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        Generator de albume foto vestimentare inspirat din atelierele clasice britanice și colecțiile iconice Ralph Lauren Purple Label. O celebrare a luxului discret, a materialelor nobile și a eleganței nemuritoare.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>ATELIER &amp; STUDIO</h5>
+                    <ul class="footer-links">
+                        <li><a href="galerie.html">Galeria de Ținute</a></li>
+                        <li><a href="generator.html">Generator de Albume</a></li>
+                        <li><a href="albume.html">Colecții &amp; Lookbook-uri</a></li>
+                        <li><a href="ghid-stil.html">Ghid Stilistic Old Money</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>GESTIUNE &amp; SERVICII</h5>
+                    <ul class="footer-links">
+                        <li><a href="inventar.html">Inventar Garderobă</a></li>
+                        <li><a href="comenzi.html">Comenzi Tipar Albume</a></li>
+                        <li><a href="rapoarte.html">Rapoarte &amp; Statistici</a></li>
+                        <li><a href="javascript:StorageManager.resetToDemo()">Resetează Date Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>AUTOR PROIECT</h5>
+                    <p style="font-size: 0.88rem; color: rgba(251, 248, 242, 0.8); margin-bottom: 0.6rem;">
+                        <strong>Cozma Petru</strong><br>
+                        Studiul Individual Nr. 2<br>
+                        Disciplina: AMPS
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 <strong>Heritage &amp; Polo Atelier</strong>. Toate drepturile rezervate.</div>
+                <div>Compatibil GitHub Pages &amp; PHP Server.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lookbook.js"></script>
+</body>
+</html>
