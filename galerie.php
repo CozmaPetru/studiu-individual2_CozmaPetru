@@ -25,7 +25,6 @@ require_once __DIR__ . '/includes/data.php';
                 <!-- Se populează dinamic cu JS -->
             </div>
             <div class="search-box">
-                <span class="search-icon">🔍</span>
                 <input type="text" id="searchInput" placeholder="Caută sacou, cașmir, mătase, tweed...">
             </div>
         </div>
